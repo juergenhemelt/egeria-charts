@@ -20,8 +20,8 @@ dependencies:
     version: 0.34.0
     repository: https://strimzi.io/charts/
     condition: strimzi.enabled
-  # TODO - reinstate dependencies after initial publish
-  #- name: egeria-lineage
-  #  version: 4.0.0
-  #  repository: https://odpi.github.io/egeria-charts
-  #  condition: egeria-lineage.enabled
+  - name: egeria-lineage
+    version: 4.0.0
+  #   # repository: https://odpi.github.io/egeria-charts
+    repository: "file://../egeria-lineage"
+    condition: egeria-lineage.enabled
