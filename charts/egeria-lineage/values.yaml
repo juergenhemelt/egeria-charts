@@ -132,9 +132,11 @@ lineage:
   config: true
   version: "4.0-prelease.0"
   # this topic will be created using the strimzi CRD
+  # and its name will be the concatenation of the topic.prefix and topic.name seperated with a dot "."
+  # e.g. <topic.prefix>.<topic.name>
   topic:
-    name: metadata
-    prefix: eventdriven
+    name: replication-metadata
+    prefix: itg
     options:
       replicas: 1
       partitions: 1
