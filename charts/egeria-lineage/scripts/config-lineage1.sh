@@ -28,6 +28,9 @@ generatePostData() {
           "headerVersion": 0,
           "connectorProviderClassName": "org.odpi.openmetadata.adapters.connectors.integration.lineage.sample.SampleLineageEventReceiverIntegrationProvider"
         },
+        "configurationProperties": {
+          "topicNamespace": "${KAFKA_NAMESPACE}"
+        },
         "embeddedConnections": [
           {
             "class": "EmbeddedConnection",
